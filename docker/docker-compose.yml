@@ -31,7 +31,7 @@ services:
       BETTER_AUTH_SECRET: "${BETTER_AUTH_SECRET:?BETTER_AUTH_SECRET must be set}"
     volumes:
       - paperclip-data:/paperclip
-      - /root/.claude:/root/.claude
+      - /root/.claude:/paperclip/.claude
     depends_on:
       db:
         condition: service_healthy
