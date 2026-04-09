@@ -32,6 +32,7 @@ services:
     volumes:
       - paperclip-data:/paperclip
       - /root/.claude:/paperclip/.claude
+      - /root/.config/opencode:/paperclip/.config/opencode
     depends_on:
       db:
         condition: service_healthy
